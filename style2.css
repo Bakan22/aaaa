@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e6edf3;
+    background-color: #0d1117;
+    padding: 24px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 12px;
+    padding: 8px 16px;
+    border: 1px solid #30363d;
+    border-radius: 40px;
+    background-color: #161b22;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #8b949e;
+    transition: 0.2s;
+}
+
+.nav-item.active {
+    background-color: #238636;
+    color: #ffffff;
+}
+
+.perkenalan {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.perkenalan-text { flex: 1.2; }
+.image { flex: 0.8; }
+.image img {
+    max-width: 100%;
+    border-radius: 16px;
+
+}
+
+.judul  { font-size: 42px; font-weight: 800; margin-bottom: 6px; color: #ffffff; }
+.subjudul  { font-size: 22px; color: #8b949e; margin-bottom: 16px; }
+.bio { color: #c9d1d9; margin-bottom: 20px; line-height: 1.6; }
+.subjudul2 { font-size: 20px; color: #8b949e; margin-bottom: 16px; font-style: italic; }
+
+
+.info {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 24px;
+}
+
+.cta-buttons { display: flex; gap: 12px; margin-bottom: 24px; }
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-primary { background: #238636; color: #ffffff; }
+
+
+.divider { border: none; border-top: 1px solid #21262d; margin-bottom: 16px; }
+.social-links { display: flex; gap: 14px; font-size: 14px; }
+.social-links a { color: #58a6ff; text-decoration: none; }
