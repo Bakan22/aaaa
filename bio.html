@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+    <link id="theme-style" rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <nav class="navbar">
+            <button class="nav-item active" onclick="switchStyle('css/style1.css', this)">Style 1 (Default) </button>
+            <button class="nav-item" onclick="switchStyle('css/style2.css', this)">Style 2 (Dark)</button>
+            <button class="nav-item" onclick="switchStyle('css/style3.css', this)">Style 3 (Retro)</button> 
+        </nav>
+    </header>
+    <main class="perkenalan">
+        <section class="perkenalan-text">
+            <h1 class="judul">Halo, Saya Andhika</h1>
+            <h2 class="subjudul">Mahasiswa Sistem Informasi</h2>
+            <h2 class="subjudul2">Universitas Pendidikan Ganesha</h2>
+
+            <p class="bio">
+               Saya menempuh seluruh jenjang pendidikan dasar hingga menengah di Kupang. 
+               Dimulai di SDK Santa Maria Assumpta Kupang untuk tingkat sekolah dasar, 
+               kemudian berlanjut ke SMPK Santa Maria Assumpta Kupang pada jenjang sekolah menengah pertama. 
+               Setelah itu, saya menyelesaikan pendidikan sekolah menengah atas di SMAK Giovanni Kupang. 
+               Saya mengisi waktu luang dengan bermain game, membaca komik, serta menonton film.
+            </p>
+
+                <span class="info"> Kupang / Bali</span>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/628199563199" target="_blank" class="btn btn-primary">Kontak Saya</a>
+            </div>
+
+            <hr class="divider">
+
+            <div class="social-links">
+                <span>Follow me:</span>
+                <a href="https://www.linkedin.com/in/andhikabakan/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/_bakan_/" target="_blank">Instagram</a>
+            </div>
+        </section>
+        
+         <section class="image">
+            <img src="foto2.png" alt="Ilustrasi Profil">
+        </section>
+    </main>
+
+    <script>
+        function switchStyle(sheetName, element) {
+            document.getElementById('theme-style').setAttribute('href', sheetName);
+
+            const buttons = document.querySelectorAll('.nav-item');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
